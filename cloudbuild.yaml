@@ -13,8 +13,6 @@ steps:
 - name: hashicorp/terraform:1.0.0
   args:
   - plan
-  - -input=false
-  - -out=tfplan
 # terraform apply -auto-approve -input=false tfplan
 - name: hashicorp/terraform:1.0.0
   args:
