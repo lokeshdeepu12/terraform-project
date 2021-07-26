@@ -1,0 +1,24 @@
+timeout: 1200s
+steps:
+# terraform init -input=false
+- name: hashicorp/terraform:1.0.0
+  args:
+  - init
+  - -input=false
+# terraform validate
+- name: hashicorp/terraform:1.0.0
+  args:
+  - validate
+# terraform plan -input=false -out=tfplan
+- name: hashicorp/terraform:1.0.0
+  args:
+  - plan
+# terraform apply -auto-approve -input=false tfplan
+- name: hashicorp/terraform:1.0.0
+  args:
+  - destroy
+  - -auto-approve
+# artifacts:
+#   objects:
+#     location: 'gs://cloud-build-bucket-123'
+#     paths: ['cloudbuild-tf-apply.yaml', 'tfplan']
