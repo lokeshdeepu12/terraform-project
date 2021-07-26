@@ -13,7 +13,7 @@ resource "google_storage_bucket" "terraform_bucket" {
   storage_class = "STANDARD"
 }
 
-resource "google_storage_bucket" "terraform_bucket" {
+resource "google_storage_bucket" "terraform_bucket_artifacts" {
   name = "cloud-build-bucket-artifacts"
   location = "US"
   force_destroy = true
