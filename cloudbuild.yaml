@@ -18,7 +18,7 @@ steps:
   args:
   - apply
   - -auto-approve
-artifacts:
-  objects:
-    location: 'gs://cloud-build-bucket-123'
-    paths: ['cloudbuild-tf-apply.yaml', 'tfplan']
+# artifacts:
+#   objects:
+#     location: 'gs://cloud-build-bucket-123'
+#     paths: ['cloudbuild-tf-apply.yaml', 'tfplan']
