@@ -1,3 +1,4 @@
 .idea/
 .terraform*
+*ets_DevOps_key.json*
 /Secret_Key/*json
