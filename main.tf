@@ -13,13 +13,13 @@ resource "google_storage_bucket" "terraform_bucket" {
   storage_class = "STANDARD"
 }
 
-resource "google_storage_bucket" "terraform_bucket_artifacts" {
-  name = "cloud-build-bucket-artifacts-1234"
-  location = "US"
-  force_destroy = true
-  project = var.project_id
-  storage_class = "STANDARD"
-}
+# resource "google_storage_bucket" "terraform_bucket_artifacts" {
+#   name = "cloud-build-bucket-artifacts-1234"
+#   location = "US"
+#   force_destroy = true
+#   project = var.project_id
+#   storage_class = "STANDARD"
+# }
 
 # /*
 # ==>  VPC Network
