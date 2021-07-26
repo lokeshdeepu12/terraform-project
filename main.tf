@@ -13,6 +13,14 @@ resource "google_storage_bucket" "terraform_bucket" {
   storage_class = "STANDARD"
 }
 
+resource "google_storage_bucket" "terraform_bucket" {
+  name = "cloud-build-bucket-test"
+  location = "US"
+  force_destroy = true
+  project = var.project_id
+  storage_class = "STANDARD"
+}
+
 # /*
 # ==>  VPC Network
 # ==> Cluster Subnet

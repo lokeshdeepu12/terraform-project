@@ -4,6 +4,7 @@
 *.json
 !/Secret_Key/*.json
 
+
 # Compiled class file
 *.class
 
