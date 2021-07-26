@@ -6,7 +6,7 @@
 # }
 
 resource "google_storage_bucket" "terraform_bucket" {
-  name = "cloud-build-bucket-123"
+  name = "cloud-build-bucket-1234"
   location = "US"
   force_destroy = true
   project = var.project_id
@@ -14,7 +14,7 @@ resource "google_storage_bucket" "terraform_bucket" {
 }
 
 resource "google_storage_bucket" "terraform_bucket_artifacts" {
-  name = "cloud-build-bucket-artifacts"
+  name = "cloud-build-bucket-artifacts-1234"
   location = "US"
   force_destroy = true
   project = var.project_id
