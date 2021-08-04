@@ -8,7 +8,7 @@ variable "zone" {
     default = "northamerica-northeast1-a" 
 }
 variable "project_id" {
-    default = "my-new-project-test-320513"
+    default = "rock-groove-322023"
 }
 variable "location" {
     default = "northamerica-northeast1"

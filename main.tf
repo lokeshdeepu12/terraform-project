@@ -1,6 +1,6 @@
 provider "google" {
   # credentials = file("../secret_key/ets_DevOps_key.json")
-  project = "	rock-groove-322023"
+  project = "rock-groove-322023"
   region  = "northamerica-northeast1"
   zone  = "northamerica-northeast1-a"
 }
