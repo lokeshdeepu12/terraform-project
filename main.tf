@@ -6,7 +6,7 @@ provider "google" {
 }
 
 resource "google_storage_bucket" "terraform_bucket" {
-  name = "cloud-build-bucket-1234"
+  name = "cloud-build-bucket-123456"
   location = "US"
   force_destroy = true
   project = var.project_id
