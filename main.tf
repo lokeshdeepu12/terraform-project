@@ -1,9 +1,9 @@
-# provider "google" {
-#   credentials = file("../secret_key/ets_DevOps_key.json")
-#   project = "my-new-project-test-320513"
-#   region  = "northamerica-northeast1"
-#   zone  = "northamerica-northeast1-a"
-# }
+provider "google" {
+  # credentials = file("../secret_key/ets_DevOps_key.json")
+  project = "	rock-groove-322023"
+  region  = "northamerica-northeast1"
+  zone  = "northamerica-northeast1-a"
+}
 
 resource "google_storage_bucket" "terraform_bucket" {
   name = "cloud-build-bucket-1234"

@@ -13,12 +13,12 @@ steps:
 - name: hashicorp/terraform:1.0.0
   args:
   - plan
-# terraform apply -auto-approve -input=false tfplan
-- name: hashicorp/terraform:1.0.0
-  args:
-  - apply
-  - -auto-approve
-# artifacts:
-#   objects:
-#     location: 'gs://cloud-build-bucket-123'
-#     paths: ['cloudbuild-tf-apply.yaml', 'tfplan']
+# # terraform apply -auto-approve -input=false tfplan
+# - name: hashicorp/terraform:1.0.0
+#   args:
+#   - apply
+#   - -auto-approve
+# # artifacts:
+# #   objects:
+# #     location: 'gs://cloud-build-bucket-123'
+# #     paths: ['cloudbuild-tf-apply.yaml', 'tfplan']
