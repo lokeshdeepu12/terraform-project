@@ -1,19 +1,19 @@
-timeout: 1200s
-steps:
-# terraform init -input=false
-- name: hashicorp/terraform:1.0.0
-  args:
-  - init
-  - -input=false
+# timeout: 1200s
+# steps:
+# # terraform init -input=false
+# - name: hashicorp/terraform:1.0.0
+#   args:
+#   - init
+#   - -input=false
 
-# terraform validate
-- name: hashicorp/terraform:1.0.0
-  args:
-  - validate
-# terraform plan -input=false -out=tfplan
-- name: hashicorp/terraform:1.0.0
-  args:
-  - plan
+# # terraform validate
+# - name: hashicorp/terraform:1.0.0
+#   args:
+#   - validate
+# # terraform plan -input=false -out=tfplan
+# - name: hashicorp/terraform:1.0.0
+#   args:
+#   - plan
 # terraform apply -auto-approve -input=false tfplan
 - name: hashicorp/terraform:1.0.0
   args:
