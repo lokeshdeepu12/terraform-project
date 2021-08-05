@@ -26,4 +26,4 @@ steps:
 artifacts:
   objects:
     location: 'gs://cloud-build-bucket-123456'
-    paths: ['cloudbuild-tf-apply.yaml', 'tfplan']
+    paths: ['cloudbuild.yaml', 'tfplan']
